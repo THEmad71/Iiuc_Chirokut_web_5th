@@ -1,0 +1,149 @@
+/* Global Styles */
+:root {
+    --primary-color: #1A434E;
+    --secondary-color: #FF8C42;;
+    --background-color: #f8f9fa;
+    --secondary-background-color: #f7fafc;
+
+}
+
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F9FAFB;
+    color: #1A434E;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*mobile prototype images*/
+/* Container styling */
+/* Container styling */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem; /* Equivalent to space-x-6 */
+}
+
+/* Image styling */
+.prototype-img {
+    height: 20rem; /* Equivalent to h-80 */
+    width: auto; /* Maintain aspect ratio */
+    border-radius: 0.5rem; /* Equivalent to rounded-lg */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Equivalent to shadow-lg */
+    transition: transform 0.3s ease; /* Smooth rotation and scale */
+}
+
+/* Hover effect */
+.prototype-img:hover {
+    transform: rotate(0) scale(1.1); /* Reset rotation and add zoom */
+}
+
+
+
+
+/* Features Section Styling */
+.features-section {
+    background-color: var(--secondary-background-color);
+    padding: 4rem 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 2rem;
+  }
+  
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .features-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .feature-item {
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-icon {
+    background-color: #1A434E;
+    color: white;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+  }
+  
+  .feature-icon:hover {
+    background-color: #15525D;
+  }
+  
+  .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .feature-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333333;
+    margin-top: 1rem;
+  }
+  
+  .feature-description {
+    font-size: 1rem;
+    color: #666666;
+    margin-top: 0.5rem;
+  }
+  
+
+
+
+
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: var(--secondary-color);
+}
+
+.footer-icon {
+    color: #ffffff;
+    font-size: 1.25rem;
+    transition: color 0.3s;
+}
+
+.footer-icon:hover {
+    color: var(--secondary-color)
+}
