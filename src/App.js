@@ -6,6 +6,8 @@ import StudentPage from './StudentPage';
 import Home from './Home';
 import ClassroomBefore from './Before Signin/Classroom_before'; // The Classroom_before component
 import ComplaintsBefore from './Before Signin/ComplaintsBefore'
+import AboutUs from './Before Signin/AboutUs'
+
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -18,6 +20,9 @@ const App = () => {
       <Route path="/signup" element={<SignUp />} />
       <Route path="/classroom" element={<ClassroomBefore />} />
       <Route path="/ComplaintsBefore" element={<ComplaintsBefore />} />
+      <Route path="/AboutUs" element={<AboutUs />} />
+
+      AboutUs
       
 
       {/* Protected Route */}

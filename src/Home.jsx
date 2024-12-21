@@ -100,7 +100,7 @@ const Home = () => {
                     Complaints
                   </Link>
                   <Link
-                    to="#"
+                    to="/AboutUs"
                     className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-white"
                   >
                     About us
