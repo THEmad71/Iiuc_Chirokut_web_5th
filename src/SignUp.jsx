@@ -64,14 +64,21 @@ const SignUp = () => {
           <a href="/signin" className="text-[#FF8C42] font-bold">Sign In</a>
         </p>
 
+        
+
         <div className="mt-6 text-center">
-          <a
-            href="/SignIn"
-            className="inline-block bg-gray-900 text-white py-2 px-4 rounded-md hover:bg-gray-700 transition"
-          >
-            Back to Home
-          </a>
-        </div>
+  <button
+    onClick={() => navigate('/home')} // Match the casing with the route
+    className="inline-block bg-gray-900 text-white py-2 px-4 rounded-md hover:bg-gray-700 transition"
+  >
+    Back to Home
+  </button>
+</div>
+
+
+
+
+
       </div>
     </div>
   );

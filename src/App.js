@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import SignIn from './SignIn';
-import SignUp from './SignUp'; // Import the SignUp component
+import SignUp from './SignUp';
 import StudentPage from './StudentPage';
 import Home from './Home';
 
@@ -9,20 +9,21 @@ const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route
-          path="/signin"
-          element={<SignIn setIsAuthenticated={setIsAuthenticated} />}
-        />
-        <Route path="/signup" element={<SignUp />} />
-        <Route
-          path="/student"
-          element={isAuthenticated ? <StudentPage /> : <SignIn setIsAuthenticated={setIsAuthenticated} />}
-        />
-      </Routes>
-    </Router>
+    <Routes>
+      {/* Public Routes */}
+      <Route path="/" element={<Home />} />
+      <Route path="/signin" element={<SignIn setIsAuthenticated={setIsAuthenticated} />} />
+      <Route path="/signup" element={<SignUp />} />
+
+      {/* Protected Route */}
+      <Route
+        path="/student"
+        element={isAuthenticated ? <StudentPage /> : <Navigate to="/signin" />}
+      />
+
+      {/* Fallback for Undefined Routes */}
+      <Route path="*" element={<Navigate to="/" />} />
+    </Routes>
   );
 };
 
