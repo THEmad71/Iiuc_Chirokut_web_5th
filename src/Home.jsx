@@ -12,6 +12,10 @@ import app_4 from './Images/chirokut app/4.png';
 import app_5 from './Images/chirokut app/5.png';
 
 
+
+import Classroom from '../src/Before Signin/Classroom_before';
+
+
 const Home = () => {
   return (
     <div>
@@ -61,6 +65,7 @@ const Home = () => {
                 </svg>
               </button>
             </div>
+            
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex shrink-0 items-center">
                 <img
@@ -78,15 +83,20 @@ const Home = () => {
                     Home
                   </Link>
                   <Link
-                    to="#"
+                    to="/Classroom"
                     className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-white"
                   >
+
+
                     Classroom
                   </Link>
                   <Link
-                    to="#"
+                
+                  to="#"
                     className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-white"
                   >
+
+
                     Complaints
                   </Link>
                   <Link
