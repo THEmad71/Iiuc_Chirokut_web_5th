@@ -5,6 +5,7 @@ import SignUp from './SignUp';
 import StudentPage from './StudentPage';
 import Home from './Home';
 import ClassroomBefore from './Before Signin/Classroom_before'; // The Classroom_before component
+import ComplaintsBefore from './Before Signin/ComplaintsBefore'
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -16,6 +17,8 @@ const App = () => {
       <Route path="/signin" element={<SignIn setIsAuthenticated={setIsAuthenticated} />} />
       <Route path="/signup" element={<SignUp />} />
       <Route path="/classroom" element={<ClassroomBefore />} />
+      <Route path="/ComplaintsBefore" element={<ComplaintsBefore />} />
+      
 
       {/* Protected Route */}
       <Route
