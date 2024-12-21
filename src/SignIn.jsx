@@ -12,7 +12,7 @@ const SignIn = ({ setIsAuthenticated }) => {
 
     // Example Sign-In logic (You can integrate with backend for real-world apps)
     if (email === "test@example.com" && password === "12345") {
-      // Set user as authenticated
+
       setIsAuthenticated(true);
       // Redirect to student page after successful login
       navigate('/student'); 
