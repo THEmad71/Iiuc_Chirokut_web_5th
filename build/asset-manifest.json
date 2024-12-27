@@ -1,22 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.811ffac6.css",
-    "main.js": "/static/js/main.aa59b6d4.js",
+    "main.css": "/static/css/main.7cb69470.css",
+    "main.js": "/static/js/main.784b6792.js",
     "static/media/Classroom_1.jpg": "/static/media/Classroom_1.c18048ce209c9355ebc6.jpg",
+    "static/media/6.jpg": "/static/media/6.0d1ba343f2c24d073f98.jpg",
     "static/media/complain_1.jpg": "/static/media/complain_1.a26fb648f7ce74cfc290.jpg",
+    "static/media/2.jpg": "/static/media/2.b059d7db622f9872a9ec.jpg",
+    "static/media/4.jpg": "/static/media/4.a5ffb82d527851ccdbe2.jpg",
+    "static/media/5.jpg": "/static/media/5.262aed88d14614622f4a.jpg",
     "static/media/2.png": "/static/media/2.61b49670fb3502619e92.png",
-    "static/media/1.png": "/static/media/1.37157d5908808d8e5e79.png",
+    "static/media/1.png": "/static/media/1.23cc627e9fb49dfdde8f.png",
     "static/media/4.png": "/static/media/4.efb689a7502d4ef276b7.png",
     "static/media/5.png": "/static/media/5.2f6fdc41f73f5a15df09.png",
     "static/media/3.png": "/static/media/3.050005c55dd71fe69d60.png",
     "static/media/chirokut_white.png": "/static/media/chirokut_white.9ffb2543c83db323b382.png",
+    "static/media/3.jpg": "/static/media/3.c5ede201895dad31a2eb.jpg",
     "static/media/chirokut 1.png": "/static/media/chirokut 1.9943b884d2106944f777.png",
     "index.html": "/index.html",
-    "main.811ffac6.css.map": "/static/css/main.811ffac6.css.map",
-    "main.aa59b6d4.js.map": "/static/js/main.aa59b6d4.js.map"
+    "main.7cb69470.css.map": "/static/css/main.7cb69470.css.map",
+    "main.784b6792.js.map": "/static/js/main.784b6792.js.map"
   },
   "entrypoints": [
-    "static/css/main.811ffac6.css",
-    "static/js/main.aa59b6d4.js"
+    "static/css/main.7cb69470.css",
+    "static/js/main.784b6792.js"
   ]
 }

@@ -5,6 +5,8 @@ import navbarLogo from '../Images/chirokut_white.png';
 function ClassroomBefore() {
   return (
     <div className="bg-gray-100 min-h-screen">
+
+      
       {/* Navbar */}
       <nav className="bg-[#1A434E]">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

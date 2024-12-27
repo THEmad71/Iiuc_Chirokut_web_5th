@@ -236,6 +236,44 @@ const Home = () => {
 </section>
 
 
+
+{/* Video Ad Section */}
+<section className="bg-[#1A434E] py-16 text-center">
+  <div className="container mx-auto px-6">
+    <h2 className="text-3xl font-bold text-white mb-6">Discover the Future of Learning</h2>
+    <p className="text-lg text-gray-200 mb-8">
+      Watch our video to explore how Chirokut revolutionizes the education experience for students and teachers alike.
+    </p>
+    <div className="relative w-full max-w-4xl mx-auto rounded-lg shadow-lg overflow-hidden">
+    <iframe 
+    className="w-full h-64 sm:h-80 md:h-96"
+    src="https://www.youtube.com/embed/_3RasOmOLM4?si=gzModHO8Yu2MsNtN" 
+    title="chirukut" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+    </iframe>
+
+
+
+      
+    </div>
+    <div className="mt-6">
+      <a
+        href="#"
+        className="inline-block bg-[#FF8C42] text-white px-6 py-3 rounded-lg hover:bg-[#E07634]"
+      >
+        Learn More
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
 <section id="features" class="features-section">
     <div class="container">
       <h2 class="section-title">Features You'll Love</h2>
