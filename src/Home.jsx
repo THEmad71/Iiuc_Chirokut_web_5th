@@ -126,8 +126,11 @@ const Home = () => {
         </div>
       </nav>
 
+
       {/* Hero Section */}
-      <section className="bg-gray-100 py-16">
+      <section className="Hero-sec">
+
+
         <div className="container mx-auto text-center px-6">
           <img
             src={chirokutLogo}  // Use imported image here too
@@ -149,6 +152,10 @@ const Home = () => {
             </a>
           </div>
         </div>
+
+
+
+        
       </section>
 
       {/* Classroom Section */}

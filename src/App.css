@@ -17,6 +17,16 @@ body {
   padding: 0;
 }
 
+.Hero-sec {
+  background-image: url('Before Signin/Images/Background 1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 42vh; /* Ensures the section fills the viewport */
+  width: 100%; /* Full width */
+}
+
+
 
 /*mobile prototype images*/
 /* Container styling */
