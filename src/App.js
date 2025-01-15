@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import SignIn from './SignIn';
 import SignUp from './SignUp';
-import StudentPage from './StudentPage';
 import Home from './Home';
 import ClassroomBefore from './Before Signin/Classroom_before'; // The Classroom_before component
 import ComplaintsBefore from './Before Signin/ComplaintsBefore'
 import AboutUs from './Before Signin/AboutUs'
+import StudentDashboard from './After Studnet signin/Student_dashboard';
 
 
 const App = () => {
@@ -28,7 +28,7 @@ const App = () => {
       {/* Protected Route */}
       <Route
         path="/student"
-        element={isAuthenticated ? <StudentPage /> : <Navigate to="/signin" />}
+        element={isAuthenticated ? <StudentDashboard /> : <Navigate to="/signin" />}
       />
 
       {/* Fallback for Undefined Routes */}
