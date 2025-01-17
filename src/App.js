@@ -7,6 +7,9 @@ import ClassroomBefore from './Before Signin/Classroom_before'; // The Classroom
 import ComplaintsBefore from './Before Signin/ComplaintsBefore'
 import AboutUs from './Before Signin/AboutUs'
 import StudentDashboard from './After Studnet signin/Student_dashboard';
+import MyProfile from './After Studnet signin/MyProfile';
+import Studymaterial from './After Studnet signin/Studymaterial';
+import StudentClassroom from './After Studnet signin/StudentClassroom'
 
 
 const App = () => {
@@ -22,7 +25,13 @@ const App = () => {
       <Route path="/ComplaintsBefore" element={<ComplaintsBefore />} />
       <Route path="/AboutUs" element={<AboutUs />} />
 
-      AboutUs
+      <Route path="/" element={<StudentDashboard />} />
+      <Route path="/my-profile" element={<MyProfile />} />
+      <Route path="/Studymaterial" element={<Studymaterial />} />
+      <Route path="/StudentClassroom" element={<StudentClassroom />} />
+     
+      
+
       
 
       {/* Protected Route */}

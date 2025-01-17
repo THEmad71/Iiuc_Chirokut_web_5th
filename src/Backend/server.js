@@ -25,11 +25,11 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
-// Sample complaints data (with topic, details, and photos)
+// Sample complaints data (with topic, details, photos, and status)
 let complaints = [
-  { id: 1, topic: 'Broken chair', details: 'The chair in classroom 101 is broken and unsafe to use.', photos: [], date: '2025-01-01' },
-  { id: 2, topic: 'Unclean washroom', details: 'The washroom near the library has not been cleaned for a week.', photos: [], date: '2025-01-02' },
-  { id: 3, topic: 'WiFi issue', details: 'The WiFi in the library is not working, preventing students from studying.', photos: [], date: '2025-01-03' }
+  { id: 1, topic: 'Broken chair', details: 'The chair in classroom 101 is broken and unsafe to use.', photos: [], date: '2025-01-01', status: 'On Process' },
+  { id: 2, topic: 'Unclean washroom', details: 'The washroom near the library has not been cleaned for a week.', photos: [], date: '2025-01-02', status: 'Solved' },
+  { id: 3, topic: 'WiFi issue', details: 'The WiFi in the library is not working, preventing students from studying.', photos: [], date: '2025-01-03', status: 'Rejected' }
 ];
 
 // Endpoint to get all complaints
@@ -48,13 +48,33 @@ app.post('/complaints', upload.array('photos', 3), (req, res) => {
       topic,
       details,
       photos,
-      date: new Date().toISOString().split('T')[0] // Today's date in YYYY-MM-DD format
+      date: new Date().toISOString().split('T')[0], // Today's date in YYYY-MM-DD format
+      status: 'On Process' // Default status
     };
     complaints.push(newComplaint);
     res.status(201).json(newComplaint); // Respond with the created complaint
   } else {
     res.status(400).json({ message: 'Topic and details are required' }); // Handle missing topic or details
   }
+});
+
+// Endpoint to update the status of a complaint
+app.put('/complaints/:id/status', (req, res) => {
+  const { id } = req.params;
+  const { status } = req.body; // Expecting "Solved," "On Process," or "Rejected"
+
+  const complaint = complaints.find(c => c.id === parseInt(id));
+
+  if (!complaint) {
+    return res.status(404).json({ message: 'Complaint not found' });
+  }
+
+  if (!['Solved', 'On Process', 'Rejected'].includes(status)) {
+    return res.status(400).json({ message: 'Invalid status value' });
+  }
+
+  complaint.status = status; // Update the status
+  res.json(complaint); // Respond with the updated complaint
 });
 
 // Start the server
